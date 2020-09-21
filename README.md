@@ -1,2 +1,2 @@
 # CircleCIGit
-Circle Ci and Git 
+Circle Ci and Git for testing 
