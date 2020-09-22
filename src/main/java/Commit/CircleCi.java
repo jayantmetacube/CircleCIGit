@@ -6,7 +6,7 @@ public class CircleCi {
 	
 	
 	{
-		System.out.println("Build Successfull");
+		System.out.println("Build  Is Successfull");
 	}
 
 }
