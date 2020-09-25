@@ -22,5 +22,4 @@ orbs:
 workflows:
   maven_build :
     jobs:
-      - build
-      - test
+    - test
