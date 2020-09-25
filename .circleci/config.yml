@@ -22,5 +22,5 @@ jobs:
 workflows:
   maven_build :
     jobs:
-    - build
-    - test	  
+       - build
+       - test
