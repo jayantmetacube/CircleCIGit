@@ -3,6 +3,22 @@ version: 2.1
 orbs:
   maven: circleci/maven@0.0.12
 
+
+  jobs:
+  build:
+    docker:
+      - image: circleci/maven@0.0.12
+    steps:
+      - checkout
+   
+  test:
+    docker:
+      - image: circleci/maven@0.0.12
+    steps:
+      - checkout
+        - run: /mvn test
+  
+  
 workflows:
   maven_build :
     jobs:
