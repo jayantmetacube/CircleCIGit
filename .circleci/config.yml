@@ -16,7 +16,7 @@ orbs:
       - image: circleci/maven@0.0.12
     steps:
       - checkout
-        - run: /mvn test
+      - run: /mvn test
   
   
 workflows:
