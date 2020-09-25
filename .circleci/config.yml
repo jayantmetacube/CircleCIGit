@@ -7,13 +7,13 @@ orbs:
 jobs:
   build:
     docker:
-      - image: circleci/maven@1.0.2
+      - image: maven
     steps:
       - checkout
    
   test:
     docker:
-      - image: circleci/maven@1.0.2
+      - image: maven
     steps:
       - checkout
       - run: /mvn test
