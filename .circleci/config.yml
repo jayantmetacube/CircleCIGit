@@ -16,7 +16,7 @@ jobs:
       - image: maven
     steps:
       - checkout
-      - run: /mvn test
+      - run: mvn test
   
   
 workflows:
