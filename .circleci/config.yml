@@ -17,10 +17,6 @@ jobs:
     steps:
       - checkout
       - run: mvn test
-	  
-	  
-	  
-  
   
 workflows:
   maven_build :
