@@ -221,7 +221,6 @@ jobs:
       - image: maven
     steps:
       - checkout
-   
     test:
     docker:
       - image: maven
@@ -296,5 +295,8 @@ workflows:
     jobs:
        - build
        - test
-       - deploy-via-git
+       - deploy-via-git   
+orbs:
+maven: circleci/maven@1.0.2
+
 version: 2.1
