@@ -279,7 +279,7 @@ jobs:
                 default: []
                 description: A list of pre-deploy steps that are run before deployment. This would be an ideal place to scale any processes down.
                 type: steps
-        steps:
+           steps:
             - install
             - check-authentication
             - checkout
