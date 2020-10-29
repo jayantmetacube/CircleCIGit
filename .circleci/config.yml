@@ -216,19 +216,19 @@ executors:
                     Pick a specific cimg/base tag: https://hub.docker.com/r/cimg/base/tags
                 type: string
 jobs:
-    build:
+  build:
     docker:
       - image: maven
     steps:
       - checkout
-    test:
+  test:
     docker:
       - image: maven
     steps:
       - checkout
       - run: mvn test
  
-    deploy-via-git:
+  deploy-via-git:
         description: |
             Quickly and easily take the changes to this branch or tag and deploy them to Heroku automatically with this job.
         executor: default
