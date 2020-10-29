@@ -261,8 +261,8 @@ jobs:
         push-docker-image:
          description: |
             Quickly and easily take the changes to this branch and deploy them to Heroku automatically with this job.
-        executor: default
-        parameters:
+         executor: default
+         parameters:
             app-name:
                 default: $HEROKU_APP_NAME
                 description: The name of your Heroku App. For backwards compatibility the literal value `$HEROKU_APP_NAME` is the default, so you can easily use this command by setting an environment variable called HEROKU_APP_NAME
