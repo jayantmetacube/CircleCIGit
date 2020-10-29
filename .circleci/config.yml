@@ -279,15 +279,15 @@ jobs:
                 default: []
                 description: A list of pre-deploy steps that are run before deployment. This would be an ideal place to scale any processes down.
                 type: steps
-           steps:
-            - install
-            - check-authentication
-            - checkout
-            - steps: << parameters.pre-deploy >>
-            - push-docker-image:
+            steps:
+             - install
+             - check-authentication
+             - checkout
+             - steps: << parameters.pre-deploy >>
+             - push-docker-image:
                 app-name: << parameters.app-name >>
                 process-types: web
-            - release-docker-image:
+             - release-docker-image:
                 app-name: << parameters.app-name >>
                 process-types: web
 workflows:
