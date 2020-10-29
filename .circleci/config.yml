@@ -258,7 +258,7 @@ jobs:
                 app-name: << parameters.app-name >>
                 maintenance-mode: << parameters.maintenance-mode >>
             - steps: << parameters.post-deploy >>
-    push-docker-image:
+     push-docker-image:
         description: |
             Quickly and easily take the changes to this branch and deploy them to Heroku automatically with this job.
         executor: default
