@@ -16,7 +16,7 @@ commands:
                       exit 1
                     else
                       echo "Heroku API key found."
-                    <<#parameters.print-whoami>>
+                    <`<#parameters.print-whoami>>
                       heroku auth:whoami
                     <</parameters.print-whoami>>
                     fi
@@ -197,7 +197,8 @@ jobs:
 workflows:
   maven_build :
     jobs:
-       - build
+       - build :
+	        context : TestHerokuDeploy
        - test
        - deploy-via-git   
 orbs:
