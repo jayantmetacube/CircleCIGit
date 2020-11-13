@@ -199,8 +199,10 @@ workflows:
     jobs:
        - build :
             context : TestHerokuDeploy
-       - test
-       - deploy-via-git   
+       - test    :
+            context : TestHerokuDeploy
+       - deploy-via-git   :
+            context : TestHerokuDeploy
 orbs:
 maven: circleci/maven@1.0.2
 
